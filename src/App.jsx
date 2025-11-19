@@ -14,8 +14,8 @@ function App() {
   return (
     <MantineProvider>
     {/* this is jsx */}
-      <h1>DebateDash</h1>
-      <h2>Procedural Timer for </h2>
+      <h1 class="heading" >DebateDash</h1>
+      <h2 class="heading" z >Procedural Timer for <br />Diverse Speaking Needs</h2>
       <NavbarSimple></NavbarSimple>
     </MantineProvider>
   )
