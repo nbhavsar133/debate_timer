@@ -12,7 +12,7 @@ import { Code, Group } from '@mantine/core';
 import classes from './NavbarSimple.module.css';
 
 const data = [ //add :icon (icon name) once icons need to be added, put commas after tab names and add icons
-  { link: '', label: 'Structured Speakers'},
+  { link: '', label: 'Structured Speeches'},
   { link: '', label: 'Floor Speeches'},
   { link: '', label: 'Moderated Caucus'},
   { link: '', label: 'Custom Timer',},
