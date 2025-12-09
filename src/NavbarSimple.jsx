@@ -10,10 +10,13 @@ import { //change icons when you are ready - each tab can have its own
 } from '@tabler/icons-react';
 import { Code, Group } from '@mantine/core';
 import classes from './NavbarSimple.module.css';
+import { useNavigate } from "react-router";
+
+
 
 const data = [ //add :icon (icon name) once icons need to be added, put commas after tab names and add icons
-  { link: '', label: 'Structured Speeches'},
-  { link: '', label: 'Floor Speeches'},
+  { link: '/structured', label: 'Structured Speeches'},
+  { link: '/floor', label: 'Floor Speeches'},
   { link: '', label: 'Moderated Caucus'},
   { link: '', label: 'Custom Timer',},
   //{ link: '', label: 'Databases', icon: IconDatabaseImport },
@@ -21,6 +24,7 @@ const data = [ //add :icon (icon name) once icons need to be added, put commas a
 
 export function NavbarSimple() {
   const [active, setActive] = useState('Billing');
+  let navigate=useNavigate();
 
 
   //map function loops through a list and returns stuff
@@ -33,6 +37,7 @@ export function NavbarSimple() {
       key={item.label}
       onClick={(event) => {
         event.preventDefault();
+        navigate(item.link)
         setActive(item.label);
       }}
     >

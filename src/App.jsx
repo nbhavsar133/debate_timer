@@ -21,7 +21,7 @@ function App() {
       <h2 className="heading" z >Procedural Timer for <br />Diverse Speaking Needs</h2>
       <NavbarSimple></NavbarSimple>
       <Routes>
-        <Route path="/" element = {<Structured_Speeches />} />
+        <Route path="/structured" element = {<Structured_Speeches />} />
         <Route path="/floor" element={<Floor_Speeches />} />
       </Routes>
 
